@@ -74,7 +74,7 @@ class RegisterController extends Controller
         ]);
 
 
-        $this->whatsappNotification($user->phone);
+        $this->whatsappNotification($data['phone']);
 
         return $user;
     }
